@@ -116,7 +116,6 @@
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "Kullanıcı";
-            this.navBarGroup1.Expanded = true;
             this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
@@ -154,7 +153,6 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "siparişler";
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
@@ -240,7 +238,6 @@
             // navBarGroup4
             // 
             this.navBarGroup4.Caption = "Müşteriler";
-            this.navBarGroup4.Expanded = true;
             this.navBarGroup4.Name = "navBarGroup4";
             // 
             // navBarGroup5

@@ -204,6 +204,51 @@
   <ItemGroup>
     <None Include="Resources\laptop.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ofis_masa.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gardırop.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mutfak_masası.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saç_köpüğü.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saç_kremi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampuan.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parfüm.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defter.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalem.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalemkutu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sırt_cantası.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayakkabı.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gömlek.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pontolon.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

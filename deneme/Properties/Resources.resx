@@ -127,4 +127,49 @@
   <data name="laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\laptop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ofis_masa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ofis_masa.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gardırop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gardırop.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mutfak_masası" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mutfak_masası.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saç_köpüğü" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saç_köpüğü.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saç_kremi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saç_kremi.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampuan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampuan.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parfüm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parfüm.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defter.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kalem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kalem.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kalemkutu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kalemkutu.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sırt_cantası" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sırt_cantası.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ayakkabı" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ayakkabı.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gömlek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gömlek.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pontolon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pontolon.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

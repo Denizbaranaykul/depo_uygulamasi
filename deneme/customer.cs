@@ -47,5 +47,15 @@ namespace deneme
             string cost = "43.699 TL";
             string explation = "";
         }
+
+        private void simpleButton14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

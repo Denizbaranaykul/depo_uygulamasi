@@ -48,8 +48,20 @@
             this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -81,6 +93,9 @@
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
+            this.xtraTabPage4.SuspendLayout();
+            this.xtraTabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -220,7 +235,7 @@
             // 
             // simpleButton9
             // 
-            this.simpleButton9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
+            this.simpleButton9.ImageOptions.Image = global::deneme.Properties.Resources.gömlek;
             this.simpleButton9.Location = new System.Drawing.Point(494, 198);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(341, 178);
@@ -238,8 +253,8 @@
             // 
             // simpleButton11
             // 
-            this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
-            this.simpleButton11.Location = new System.Drawing.Point(494, 0);
+            this.simpleButton11.ImageOptions.Image = global::deneme.Properties.Resources.ayakkabı;
+            this.simpleButton11.Location = new System.Drawing.Point(494, 3);
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Size = new System.Drawing.Size(345, 178);
             this.simpleButton11.TabIndex = 8;
@@ -247,8 +262,8 @@
             // 
             // simpleButton12
             // 
-            this.simpleButton12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton12.ImageOptions.Image")));
-            this.simpleButton12.Location = new System.Drawing.Point(35, 196);
+            this.simpleButton12.ImageOptions.Image = global::deneme.Properties.Resources.pontolon;
+            this.simpleButton12.Location = new System.Drawing.Point(35, 198);
             this.simpleButton12.Name = "simpleButton12";
             this.simpleButton12.Size = new System.Drawing.Size(401, 178);
             this.simpleButton12.TabIndex = 7;
@@ -265,24 +280,146 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.simpleButton17);
+            this.xtraTabPage2.Controls.Add(this.simpleButton15);
+            this.xtraTabPage2.Controls.Add(this.simpleButton16);
+            this.xtraTabPage2.Controls.Add(this.simpleButton14);
             this.xtraTabPage2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage2.ImageOptions.SvgImage")));
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(888, 393);
             this.xtraTabPage2.Text = "mobilya";
             // 
+            // simpleButton17
+            // 
+            this.simpleButton17.ImageOptions.Image = global::deneme.Properties.Resources.mutfak_masası;
+            this.simpleButton17.Location = new System.Drawing.Point(454, 206);
+            this.simpleButton17.Name = "simpleButton17";
+            this.simpleButton17.Size = new System.Drawing.Size(388, 166);
+            this.simpleButton17.TabIndex = 4;
+            this.simpleButton17.Text = "simpleButton17";
+            // 
+            // simpleButton15
+            // 
+            this.simpleButton15.ImageOptions.Image = global::deneme.Properties.Resources.gardırop;
+            this.simpleButton15.Location = new System.Drawing.Point(454, 11);
+            this.simpleButton15.Name = "simpleButton15";
+            this.simpleButton15.Size = new System.Drawing.Size(388, 166);
+            this.simpleButton15.TabIndex = 3;
+            this.simpleButton15.Text = "simpleButton15";
+            // 
+            // simpleButton16
+            // 
+            this.simpleButton16.ImageOptions.Image = global::deneme.Properties.Resources.images;
+            this.simpleButton16.Location = new System.Drawing.Point(57, 206);
+            this.simpleButton16.Name = "simpleButton16";
+            this.simpleButton16.Size = new System.Drawing.Size(375, 166);
+            this.simpleButton16.TabIndex = 2;
+            this.simpleButton16.Text = "simpleButton16";
+            // 
+            // simpleButton14
+            // 
+            this.simpleButton14.ImageOptions.Image = global::deneme.Properties.Resources.ofis_masa;
+            this.simpleButton14.Location = new System.Drawing.Point(57, 11);
+            this.simpleButton14.Name = "simpleButton14";
+            this.simpleButton14.Size = new System.Drawing.Size(375, 166);
+            this.simpleButton14.TabIndex = 0;
+            this.simpleButton14.Text = "simpleButton14";
+            this.simpleButton14.Click += new System.EventHandler(this.simpleButton14_Click);
+            // 
             // xtraTabPage4
             // 
+            this.xtraTabPage4.Controls.Add(this.simpleButton21);
+            this.xtraTabPage4.Controls.Add(this.simpleButton20);
+            this.xtraTabPage4.Controls.Add(this.simpleButton19);
+            this.xtraTabPage4.Controls.Add(this.simpleButton18);
             this.xtraTabPage4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage4.ImageOptions.SvgImage")));
             this.xtraTabPage4.Name = "xtraTabPage4";
             this.xtraTabPage4.Size = new System.Drawing.Size(888, 393);
-            this.xtraTabPage4.Text = "kozmatik";
+            this.xtraTabPage4.Text = "kozmetik";
+            // 
+            // simpleButton21
+            // 
+            this.simpleButton21.ImageOptions.Image = global::deneme.Properties.Resources.sampuan;
+            this.simpleButton21.Location = new System.Drawing.Point(520, 186);
+            this.simpleButton21.Name = "simpleButton21";
+            this.simpleButton21.Size = new System.Drawing.Size(307, 194);
+            this.simpleButton21.TabIndex = 3;
+            this.simpleButton21.Text = "simpleButton21";
+            this.simpleButton21.Click += new System.EventHandler(this.simpleButton21_Click);
+            // 
+            // simpleButton20
+            // 
+            this.simpleButton20.ImageOptions.Image = global::deneme.Properties.Resources.saç_kremi;
+            this.simpleButton20.Location = new System.Drawing.Point(520, 0);
+            this.simpleButton20.Name = "simpleButton20";
+            this.simpleButton20.Size = new System.Drawing.Size(307, 179);
+            this.simpleButton20.TabIndex = 2;
+            this.simpleButton20.Text = "simpleButton20";
+            // 
+            // simpleButton19
+            // 
+            this.simpleButton19.ImageOptions.Image = global::deneme.Properties.Resources.saç_köpüğü;
+            this.simpleButton19.Location = new System.Drawing.Point(39, 186);
+            this.simpleButton19.Name = "simpleButton19";
+            this.simpleButton19.Size = new System.Drawing.Size(307, 194);
+            this.simpleButton19.TabIndex = 1;
+            this.simpleButton19.Text = "simpleButton19";
+            // 
+            // simpleButton18
+            // 
+            this.simpleButton18.ImageOptions.Image = global::deneme.Properties.Resources.parfüm;
+            this.simpleButton18.Location = new System.Drawing.Point(39, 11);
+            this.simpleButton18.Name = "simpleButton18";
+            this.simpleButton18.Size = new System.Drawing.Size(307, 169);
+            this.simpleButton18.TabIndex = 0;
+            this.simpleButton18.Text = "simpleButton18";
             // 
             // xtraTabPage5
             // 
+            this.xtraTabPage5.Controls.Add(this.simpleButton25);
+            this.xtraTabPage5.Controls.Add(this.simpleButton24);
+            this.xtraTabPage5.Controls.Add(this.simpleButton23);
+            this.xtraTabPage5.Controls.Add(this.simpleButton22);
             this.xtraTabPage5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage5.ImageOptions.SvgImage")));
             this.xtraTabPage5.Name = "xtraTabPage5";
             this.xtraTabPage5.Size = new System.Drawing.Size(888, 393);
             this.xtraTabPage5.Text = "kitap ve kırtasiye";
+            // 
+            // simpleButton25
+            // 
+            this.simpleButton25.ImageOptions.Image = global::deneme.Properties.Resources.kalemkutu;
+            this.simpleButton25.Location = new System.Drawing.Point(505, 205);
+            this.simpleButton25.Name = "simpleButton25";
+            this.simpleButton25.Size = new System.Drawing.Size(307, 173);
+            this.simpleButton25.TabIndex = 3;
+            this.simpleButton25.Text = "simpleButton25";
+            // 
+            // simpleButton24
+            // 
+            this.simpleButton24.ImageOptions.Image = global::deneme.Properties.Resources.kalem;
+            this.simpleButton24.Location = new System.Drawing.Point(505, 11);
+            this.simpleButton24.Name = "simpleButton24";
+            this.simpleButton24.Size = new System.Drawing.Size(307, 177);
+            this.simpleButton24.TabIndex = 2;
+            this.simpleButton24.Text = "simpleButton24";
+            // 
+            // simpleButton23
+            // 
+            this.simpleButton23.ImageOptions.Image = global::deneme.Properties.Resources.defter;
+            this.simpleButton23.Location = new System.Drawing.Point(33, 205);
+            this.simpleButton23.Name = "simpleButton23";
+            this.simpleButton23.Size = new System.Drawing.Size(323, 173);
+            this.simpleButton23.TabIndex = 1;
+            this.simpleButton23.Text = "simpleButton23";
+            // 
+            // simpleButton22
+            // 
+            this.simpleButton22.ImageOptions.Image = global::deneme.Properties.Resources.sırt_cantası;
+            this.simpleButton22.Location = new System.Drawing.Point(33, 11);
+            this.simpleButton22.Name = "simpleButton22";
+            this.simpleButton22.Size = new System.Drawing.Size(323, 177);
+            this.simpleButton22.TabIndex = 0;
+            this.simpleButton22.Text = "simpleButton22";
             // 
             // simpleButton1
             // 
@@ -324,7 +461,6 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "alışveriş sepeti";
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarGroup2.ImageOptions.SvgImage")));
             this.navBarGroup2.Name = "navBarGroup2";
             // 
@@ -479,6 +615,9 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage2.ResumeLayout(false);
+            this.xtraTabPage4.ResumeLayout(false);
+            this.xtraTabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
@@ -536,5 +675,17 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
         private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton14;
+        private DevExpress.XtraEditors.SimpleButton simpleButton17;
+        private DevExpress.XtraEditors.SimpleButton simpleButton15;
+        private DevExpress.XtraEditors.SimpleButton simpleButton16;
+        private DevExpress.XtraEditors.SimpleButton simpleButton21;
+        private DevExpress.XtraEditors.SimpleButton simpleButton20;
+        private DevExpress.XtraEditors.SimpleButton simpleButton19;
+        private DevExpress.XtraEditors.SimpleButton simpleButton18;
+        private DevExpress.XtraEditors.SimpleButton simpleButton25;
+        private DevExpress.XtraEditors.SimpleButton simpleButton24;
+        private DevExpress.XtraEditors.SimpleButton simpleButton23;
+        private DevExpress.XtraEditors.SimpleButton simpleButton22;
     }
 }
