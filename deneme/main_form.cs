@@ -27,5 +27,10 @@ namespace deneme
         {
 
         }
+
+        private void xtraTabPage2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -48,7 +48,6 @@
             this.navBarSeparatorItem5 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem6 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
-            this.navBarItem8 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
@@ -79,6 +78,7 @@
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1279, 802);
             this.xtraTabPage2.Text = "DEPO";
+            this.xtraTabPage2.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage2_Paint);
             // 
             // navBarControl1
             // 
@@ -103,8 +103,7 @@
             this.navBarItem6,
             this.navBarSeparatorItem5,
             this.navBarItem7,
-            this.navBarSeparatorItem6,
-            this.navBarItem8});
+            this.navBarSeparatorItem6});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 288;
@@ -116,6 +115,7 @@
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "Kullanıcı";
+            this.navBarGroup1.Expanded = true;
             this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
@@ -153,6 +153,7 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "siparişler";
+            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
@@ -197,13 +198,13 @@
             // navBarGroup3
             // 
             this.navBarGroup3.Caption = "Stoklar";
+            this.navBarGroup3.Expanded = true;
             this.navBarGroup3.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem6),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem5),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem7),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem6),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem8)});
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem6)});
             this.navBarGroup3.Name = "navBarGroup3";
             // 
             // navBarItem6
@@ -230,14 +231,10 @@
             this.navBarSeparatorItem6.Hint = null;
             this.navBarSeparatorItem6.Name = "navBarSeparatorItem6";
             // 
-            // navBarItem8
-            // 
-            this.navBarItem8.Caption = "Yeni Stok haraketleri";
-            this.navBarItem8.Name = "navBarItem8";
-            // 
             // navBarGroup4
             // 
             this.navBarGroup4.Caption = "Müşteriler";
+            this.navBarGroup4.Expanded = true;
             this.navBarGroup4.Name = "navBarGroup4";
             // 
             // navBarGroup5
@@ -290,7 +287,6 @@
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem5;
         private DevExpress.XtraNavBar.NavBarItem navBarItem7;
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem6;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem8;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup4;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup5;
     }

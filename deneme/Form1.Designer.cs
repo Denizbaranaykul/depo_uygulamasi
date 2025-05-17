@@ -34,8 +34,6 @@
             this.btn_login = new DevExpress.XtraEditors.SimpleButton();
             this.şifre = new DevExpress.XtraEditors.LabelControl();
             this.kullanıcı_adi = new DevExpress.XtraEditors.LabelControl();
-            this.txt_password = new DevExpress.XtraEditors.TextEdit();
-            this.txt_user_name = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.lbl_customer_login_wrong = new DevExpress.XtraEditors.LabelControl();
@@ -43,17 +41,19 @@
             this.btn_login_customer = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txt_password_customer = new DevExpress.XtraEditors.TextEdit();
             this.txt_user_name_customer = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_password = new DevExpress.XtraEditors.TextEdit();
+            this.txt_user_name = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_password.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_user_name.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_password_customer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_user_name_customer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_password.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_user_name.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -112,20 +112,6 @@
             this.kullanıcı_adi.Size = new System.Drawing.Size(66, 16);
             this.kullanıcı_adi.TabIndex = 2;
             this.kullanıcı_adi.Text = "kullanıcı adı";
-            // 
-            // txt_password
-            // 
-            this.txt_password.Location = new System.Drawing.Point(124, 118);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(213, 24);
-            this.txt_password.TabIndex = 1;
-            // 
-            // txt_user_name
-            // 
-            this.txt_user_name.Location = new System.Drawing.Point(124, 50);
-            this.txt_user_name.Name = "txt_user_name";
-            this.txt_user_name.Size = new System.Drawing.Size(213, 24);
-            this.txt_user_name.TabIndex = 0;
             // 
             // labelControl1
             // 
@@ -193,6 +179,16 @@
             this.labelControl4.TabIndex = 2;
             this.labelControl4.Text = "kullanıcı adı";
             // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(604, 12);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(123, 24);
+            this.labelControl5.TabIndex = 3;
+            this.labelControl5.Text = "müşteri geçişi";
+            // 
             // txt_password_customer
             // 
             this.txt_password_customer.Location = new System.Drawing.Point(124, 118);
@@ -207,15 +203,19 @@
             this.txt_user_name_customer.Size = new System.Drawing.Size(213, 24);
             this.txt_user_name_customer.TabIndex = 0;
             // 
-            // labelControl5
+            // txt_password
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(604, 12);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(123, 24);
-            this.labelControl5.TabIndex = 3;
-            this.labelControl5.Text = "müşteri geçişi";
+            this.txt_password.Location = new System.Drawing.Point(124, 118);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(213, 24);
+            this.txt_password.TabIndex = 1;
+            // 
+            // txt_user_name
+            // 
+            this.txt_user_name.Location = new System.Drawing.Point(124, 50);
+            this.txt_user_name.Name = "txt_user_name";
+            this.txt_user_name.Size = new System.Drawing.Size(213, 24);
+            this.txt_user_name.TabIndex = 0;
             // 
             // Form1
             // 
@@ -230,16 +230,17 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login screen";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_password.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_user_name.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_password_customer.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_user_name_customer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_password.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_user_name.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

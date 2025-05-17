@@ -249,6 +249,66 @@
   <ItemGroup>
     <None Include="Resources\pontolon.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekran.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klavye.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kulaklık.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oyunkolu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playstatıon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablet.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbox.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\converse._beyazjpeg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\converse.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebıse_mavi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elbise_kırmızı.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gömlek1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kız_cocuk_elbıse.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topuklu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çorap.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kadın_pantolon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topukluu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphonee.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
