@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 612);
+            this.ClientSize = new System.Drawing.Size(876, 612);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.txtStokAdedi);

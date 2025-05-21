@@ -125,12 +125,6 @@
     <Compile Include="customer.Designer.cs">
       <DependentUpon>customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="dialog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="dialog.Designer.cs">
-      <DependentUpon>dialog.cs</DependentUpon>
-    </Compile>
     <Compile Include="dialoggg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +165,6 @@
     </Compile>
     <EmbeddedResource Include="customer.resx">
       <DependentUpon>customer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dialog.resx">
-      <DependentUpon>dialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dialoggg.resx">
       <DependentUpon>dialoggg.cs</DependentUpon>

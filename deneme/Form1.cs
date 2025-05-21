@@ -13,7 +13,7 @@ namespace deneme
         public MySqlDataAdapter adapter;
         public DataTable dt;
         internal object listBoxControl1;
-
+        public static customer customerForm= new customer();
         public Form1()
         {
             InitializeComponent();
@@ -81,7 +81,7 @@ namespace deneme
 
                 if (dt.Rows.Count > 0)
                 {
-                    customer customerForm = new customer();
+                   
                     customerForm.Show();
                     this.Hide();
                 }

@@ -111,7 +111,7 @@
             // 
             this.lbl_order.Appearance.Font = new System.Drawing.Font("Tahoma", 25F);
             this.lbl_order.Appearance.Options.UseFont = true;
-            this.lbl_order.Location = new System.Drawing.Point(455, 483);
+            this.lbl_order.Location = new System.Drawing.Point(272, 484);
             this.lbl_order.Name = "lbl_order";
             this.lbl_order.Size = new System.Drawing.Size(118, 51);
             this.lbl_order.TabIndex = 0;
@@ -176,7 +176,7 @@
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(399, 178);
             this.simpleButton6.TabIndex = 4;
-            this.simpleButton6.Text = "playstation 5\r\n38.000 tl";
+            this.simpleButton6.Text = "playstation 5\r\n38.001 tl";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // simpleButton5
@@ -209,7 +209,7 @@
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(360, 178);
             this.simpleButton3.TabIndex = 1;
-            this.simpleButton3.Text = "iPad Air M3\r\n27.000 tl";
+            this.simpleButton3.Text = "iPad Air M3\r\n27000 tl";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton2
@@ -220,7 +220,7 @@
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(360, 178);
             this.simpleButton2.TabIndex = 0;
-            this.simpleButton2.Text = "İphone 14\r\n43.000 TL";
+            this.simpleButton2.Text = "İphone 14\r\n43.999 TL";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // xtraTabPage1
@@ -506,6 +506,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(136, 50);
             this.simpleButton1.TabIndex = 2;
             this.simpleButton1.Text = "sipariş ver";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // panelControl2
             // 
@@ -688,6 +689,7 @@
             this.Controls.Add(this.lbl_order);
             this.Name = "customer";
             this.Text = "customer";
+            this.Load += new System.EventHandler(this.customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
@@ -708,8 +710,6 @@
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.LabelControl lbl_order;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
@@ -770,5 +770,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         public DevExpress.XtraEditors.ListBoxControl listBoxControl1;
+        public DevExpress.XtraEditors.LabelControl lbl_order;
     }
 }

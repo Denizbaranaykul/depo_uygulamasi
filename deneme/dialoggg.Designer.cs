@@ -65,18 +65,18 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(56, 511);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(8, 30);
+            this.labelControl2.Size = new System.Drawing.Size(0, 30);
             this.labelControl2.TabIndex = 11;
-            this.labelControl2.Text = ".";
             // 
             // btn_sepete_ekle2
             // 
-            this.btn_sepete_ekle2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_sepete_ekle.ImageOptions.SvgImage")));
+            this.btn_sepete_ekle2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_sepete_ekle2.ImageOptions.SvgImage")));
             this.btn_sepete_ekle2.Location = new System.Drawing.Point(180, 509);
             this.btn_sepete_ekle2.Name = "btn_sepete_ekle2";
             this.btn_sepete_ekle2.Size = new System.Drawing.Size(140, 43);
             this.btn_sepete_ekle2.TabIndex = 10;
             this.btn_sepete_ekle2.Text = "sepete ekle";
+            this.btn_sepete_ekle2.Click += new System.EventHandler(this.btn_sepete_ekle2_Click);
             // 
             // pictureEdit1
             // 

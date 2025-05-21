@@ -25,14 +25,18 @@ namespace deneme
 
         private void navBarControl1_Click(object sender, EventArgs e)
         {
-            ürün_islem urun_islem = new ürün_islem();
-            
-            urun_islem.Show();
+           
         }
 
         private void xtraTabPage2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void navBarItem3_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            ürün_islem urunEkleForm = new ürün_islem();
+            urunEkleForm.Show();
         }
     }
 }
