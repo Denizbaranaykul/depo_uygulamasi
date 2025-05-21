@@ -25,7 +25,9 @@ namespace deneme
 
         private void navBarControl1_Click(object sender, EventArgs e)
         {
-
+            ürün_islem urun_islem = new ürün_islem();
+            
+            urun_islem.Show();
         }
 
         private void xtraTabPage2_Paint(object sender, PaintEventArgs e)

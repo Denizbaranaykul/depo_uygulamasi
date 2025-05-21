@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,11 +83,19 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.panelControl1);
             this.xtraTabPage2.Controls.Add(this.navBarControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1279, 802);
             this.xtraTabPage2.Text = "DEPO";
             this.xtraTabPage2.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage2_Paint);
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Location = new System.Drawing.Point(353, 17);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(888, 699);
+            this.panelControl1.TabIndex = 3;
             // 
             // navBarControl1
             // 
@@ -113,8 +123,8 @@
             this.navBarSeparatorItem6});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 288;
-            this.navBarControl1.Size = new System.Drawing.Size(288, 802);
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 323;
+            this.navBarControl1.Size = new System.Drawing.Size(323, 802);
             this.navBarControl1.TabIndex = 2;
             this.navBarControl1.Text = "navBarControl1";
             this.navBarControl1.Click += new System.EventHandler(this.navBarControl1_Click);
@@ -159,7 +169,7 @@
             // 
             // navBarGroup2
             // 
-            this.navBarGroup2.Caption = "siparişler";
+            this.navBarGroup2.Caption = "Ürünler";
             this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
@@ -172,7 +182,7 @@
             // 
             // navBarItem3
             // 
-            this.navBarItem3.Caption = "yeni sipariş";
+            this.navBarItem3.Caption = "Ürün ekle";
             this.navBarItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem3.ImageOptions.SvgImage")));
             this.navBarItem3.Name = "navBarItem3";
             // 
@@ -185,7 +195,7 @@
             // 
             // navBarItem4
             // 
-            this.navBarItem4.Caption = "Siparişler";
+            this.navBarItem4.Caption = "Ürün silme";
             this.navBarItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem4.ImageOptions.SvgImage")));
             this.navBarItem4.Name = "navBarItem4";
             // 
@@ -245,6 +255,7 @@
             // navBarGroup5
             // 
             this.navBarGroup5.Caption = "Ayarlar";
+            this.navBarGroup5.Expanded = true;
             this.navBarGroup5.Name = "navBarGroup5";
             // 
             // xtraTabPage3
@@ -286,6 +297,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage3.PerformLayout();
@@ -322,5 +334,6 @@
         private System.Windows.Forms.Label label_qrkod;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
     }
 }
