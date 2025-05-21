@@ -46,6 +46,7 @@
             this.txt_user_name_customer = new DevExpress.XtraEditors.TextEdit();
             this.txt_password = new DevExpress.XtraEditors.TextEdit();
             this.txt_user_name = new DevExpress.XtraEditors.TextEdit();
+            this.btn_kayıt_ol = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -90,9 +91,9 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(143, 170);
+            this.btn_login.Location = new System.Drawing.Point(152, 170);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(180, 39);
+            this.btn_login.Size = new System.Drawing.Size(163, 39);
             this.btn_login.TabIndex = 4;
             this.btn_login.Text = "giriş yap";
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
@@ -125,6 +126,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.btn_kayıt_ol);
             this.panelControl2.Controls.Add(this.lbl_customer_login_wrong);
             this.panelControl2.Controls.Add(this.btn_close_customer);
             this.panelControl2.Controls.Add(this.btn_login_customer);
@@ -156,9 +158,9 @@
             // 
             // btn_login_customer
             // 
-            this.btn_login_customer.Location = new System.Drawing.Point(143, 170);
+            this.btn_login_customer.Location = new System.Drawing.Point(245, 170);
             this.btn_login_customer.Name = "btn_login_customer";
-            this.btn_login_customer.Size = new System.Drawing.Size(180, 39);
+            this.btn_login_customer.Size = new System.Drawing.Size(92, 39);
             this.btn_login_customer.TabIndex = 4;
             this.btn_login_customer.Text = "giriş yap";
             this.btn_login_customer.Click += new System.EventHandler(this.btn_login_customer_Click);
@@ -217,11 +219,20 @@
             this.txt_user_name.Size = new System.Drawing.Size(213, 24);
             this.txt_user_name.TabIndex = 0;
             // 
+            // btn_kayıt_ol
+            // 
+            this.btn_kayıt_ol.Location = new System.Drawing.Point(134, 170);
+            this.btn_kayıt_ol.Name = "btn_kayıt_ol";
+            this.btn_kayıt_ol.Size = new System.Drawing.Size(80, 39);
+            this.btn_kayıt_ol.TabIndex = 7;
+            this.btn_kayıt_ol.Text = "kayıt ol";
+            this.btn_kayıt_ol.Click += new System.EventHandler(this.btn_kayıt_ol_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 322);
+            this.ClientSize = new System.Drawing.Size(906, 366);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.labelControl1);
@@ -230,7 +241,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login screen";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -266,6 +276,7 @@
         private DevExpress.XtraEditors.TextEdit txt_password_customer;
         private DevExpress.XtraEditors.TextEdit txt_user_name_customer;
         private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.SimpleButton btn_kayıt_ol;
     }
 }
 

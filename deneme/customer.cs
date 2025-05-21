@@ -224,12 +224,47 @@ namespace deneme
             string explation = "\U0001f9f4 Temel Özellikler\r\nÜrün Adı: Saç Kremi\r\n\r\nTanım: Saçı yumuşatmak, nemlendirmek, kolay taranmasını sağlamak ve elektriklenmeyi önlemek amacıyla kullanılan bakım ürünü\r\n\r\nKullanım Alanı: Banyo sonrası bakım, saç yumuşatma ve onarma\r\n\r\n\U0001f9ea İçerik Özellikleri\r\nTemel Bileşenler:\r\n\r\nSilikonlar (pürüzsüzlük sağlar)\r\n\r\nBitkisel yağlar (argan, hindistancevizi, zeytin yağı)\r\n\r\nProtein ve keratin (onarıcı etki)\r\n\r\nVitaminler (B5, E, vb.)\r\n\r\nAlkol ve Paraben: Bazı ürünlerde bulunur; hassas saç tipleri için dikkat edilmeli\r\n\r\n📏 Mekanik / Fiziksel Özellikler\r\nForm: Krem (akışkan veya yoğun kıvamlı)\r\n\r\nUygulama Şekli: Şampuan sonrası nemli saça uygulanır, genellikle birkaç dakika bekletilip durulanır\r\n\r\nDurulama Türü:\r\n\r\nDurulanan saç kremi\r\n\r\nDurulanmayan (leave-in) saç kremi\r\n\r\n💇‍♀️ Fonksiyonel Özellikler\r\nEtkileri:\r\n\r\nSaçı yumuşatır ve nemlendirir\r\n\r\nSaç uçlarındaki kırıkları azaltır\r\n\r\nKolay tarama sağlar\r\n\r\nSaç elektriklenmesini ve kabarmayı önler\r\n\r\nSaçı güneş, ısı ve çevresel etkilere karşı koruyabilir\r\n\r\n\U0001f9fc Kullanım ve Temizlik\r\nGünlük veya haftalık kullanım için uygundur\r\n\r\nSaçtan kolayca durulanır\r\n\r\nYağlı saçlar için hafif formüller tercih edilmeli\r\n\r\n🎨 Tasarım\r\nTüp, pompalı şişe veya kavanoz formunda sunulur\r\n\r\nGenellikle hoş kokulu ve pratik kapaklı ambalajlar\r\n\r\nİstersen saç tipine (kuru, yağlı, boyalı, ince telli vs.) göre uygun saç kremi türleri hakkında da de";
             showdialog(name, cost, explation, Properties.Resources.saç_kremi);
         }
+
+        private void simpleButton22_Click(object sender, EventArgs e)
+        {
+            string name = "sırt çantası";
+            string cost = "350 tl";
+            string explation = "🎒 Temel Özellikler\r\nÜrün Adı: Sırt Çantası\r\n\r\nTanım: Eşyaları taşıma amacıyla iki omuzla kullanılan, arka sırta oturan taşıma çantası\r\n\r\nKullanım Alanı: Okul, günlük kullanım, seyahat, spor, kamp\r\n\r\n\U0001f9f5 Malzeme Özellikleri\r\nAna Malzeme:\r\n\r\nPolyester, kanvas, naylon, deri veya su geçirmez kumaş\r\n\r\nAstar: Genellikle polyester veya pamuklu kumaş\r\n\r\nFermuarlar: Metal veya plastik, genellikle çift yönlü\r\n\r\n📏 Mekanik / Fiziksel Özellikler\r\nBoyutlar:\r\n\r\nKüçük (10–15 L), Orta (20–30 L), Büyük (35 L ve üzeri)\r\n\r\nBölmeler:\r\n\r\nAna göz\r\n\r\nLaptop bölmesi (korumalı)\r\n\r\nÖn cep, yan suluk cepleri\r\n\r\nGizli cep (bazı modellerde)\r\n\r\nAğırlık Taşıma: Ortalama 5–15 kg arası (modele bağlı)\r\n\r\n\U0001f9f0 Fonksiyonel Özellikler\r\nAskılar: Ayarlanabilir, yumuşak dolgulu omuz askıları\r\n\r\nSırt Kısmı: Nefes alabilir ve destekli sünger panel\r\n\r\nEk Özellikler:\r\n\r\nUSB girişli modeller\r\n\r\nSu geçirmezlik\r\n\r\nKulaklık çıkışı\r\n\r\nYansıtıcı şeritler (güvenlik için)\r\n\r\n🎨 Tasarım ve Stil\r\nRenk Seçenekleri: Siyah, gri, mavi, yeşil, desenli vs.\r\n\r\nTasarım Tarzı:\r\n\r\nSpor\r\n\r\nKlasik\r\n\r\nŞehir tipi\r\n\r\nOutdoor / trekking tarzı\r\n\r\n\U0001f9fc Kullanım ve Temizlik\r\nHafif nemli bezle temizlenebilir\r\n\r\nBazı kumaş modeller elde yıkanabilir\r\n\r\nDeri olanlar özel bakım gerektirir\r\n\r\n";
+            showdialog(name, cost, explation, Properties.Resources.sırt_cantası);
+        }
+
+        private void simpleButton24_Click(object sender, EventArgs e)
+        {
+            string name = "kalem";
+            string cost = "150 tl";
+            string explation = "✏️ Temel Özellikler\r\nÜrün Adı: 0.7 mm Uçlu Kalem\r\n\r\nTanım: 0.7 mm kalınlığında grafit uç kullanan, mekanizmalı yazı kalemi\r\n\r\nKullanım Alanı: Günlük yazı, not alma, okul, ofis, teknik olmayan çizimler\r\n\r\n📏 Mekanik / Fiziksel Özellikler\r\nUç Kalınlığı: 0.7 mm (orta kalınlık – hem yazı hem çizim için ideal)\r\n\r\nYazı Tipi: Daha koyu ve belirgin çizgi\r\n\r\nUç Dayanıklılığı: 0.5 mm'ye göre daha kırılmaya dirençli\r\n\r\nKullanım: Sert bastırarak yazanlar için uygundur\r\n\r\n\U0001f9f1 Malzeme ve Yapı\r\nGövde Malzemesi: Plastik, metal veya hibrit (markaya göre)\r\n\r\nTutuş Yeri: Kaymaz kauçuk, silikon ya da plastik grip\r\n\r\nSilgi: Genellikle uç kısmında kapağın altında\r\n\r\nYedek Uç: HB, B, 2B gibi farklı sertliklerde 0.7 mm uçlarla çalışır\r\n\r\n⚙️ Fonksiyonel Özellikler\r\nMekanizma: Tıklamalı veya döner mekanizma\r\n\r\nUç Çıkışı: Basmalı sistemle kontrollü uç çıkışı\r\n\r\nYedekleme: Kalem içinde 3–5 yedek uç taşıyabilir\r\n\r\n🎨 Tasarım ve Renkler\r\nÇeşitli renk ve tasarımlarda bulunabilir (mavi, siyah, şeffaf, pastel tonlar vb.)\r\n\r\nHem klasik hem modern modeller mevcuttur";
+            showdialog(name, cost, explation, Properties.Resources.kalem);
+        }
+
+        private void simpleButton23_Click(object sender, EventArgs e)
+        {
+            string name = "defter";
+            string cost = "38.000 tl";
+            string explation = "";
+            showdialog(name, cost, explation, Properties.Resources.defter);
+        }
+
+        private void simpleButton25_Click(object sender, EventArgs e)
+        {
+            string name = "kalem kutu";
+            string cost = "38.000 tl";
+            string explation = "";
+            showdialog(name, cost, explation, Properties.Resources.playstatıon);
+        }
+        private void ürünDetayGoster() // örnek fonksiyon
+        {
+            dialoggg dlg = new dialoggg();
+            dlg.AnaForm = this; // Şu anki formu referans olarak verdik
+            dlg.Label3Text = "Örnek Ürün Adı";
+            dlg.ShowDialog();
+        }
     }
 }
 
 
 
-//string name = "playstation 5";
-//string cost = "38.000 tl";
-//string explation = "";
-//showdialog(name, cost, explation, Properties.Resources.playstatıon);

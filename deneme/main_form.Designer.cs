@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
@@ -51,10 +52,16 @@
             this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.label_qrkod = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
+            this.xtraTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -115,6 +122,7 @@
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "Kullanıcı";
+            this.navBarGroup1.Expanded = true;
             this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
@@ -125,7 +133,7 @@
             // 
             // navBarItem1
             // 
-            this.navBarItem1.Caption = "outurm açan kullanıcı";
+            this.navBarItem1.Caption = "oturum açan kullanıcı";
             this.navBarItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.ImageOptions.LargeImage")));
             this.navBarItem1.Name = "navBarItem1";
             // 
@@ -152,6 +160,7 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "siparişler";
+            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
@@ -240,9 +249,30 @@
             // 
             // xtraTabPage3
             // 
+            this.xtraTabPage3.Controls.Add(this.label_qrkod);
+            this.xtraTabPage3.Controls.Add(this.pictureBox1);
             this.xtraTabPage3.Name = "xtraTabPage3";
             this.xtraTabPage3.Size = new System.Drawing.Size(1279, 802);
             this.xtraTabPage3.Text = "HIZLI SATIŞ";
+            // 
+            // label_qrkod
+            // 
+            this.label_qrkod.AutoSize = true;
+            this.label_qrkod.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_qrkod.Location = new System.Drawing.Point(296, 115);
+            this.label_qrkod.Name = "label_qrkod";
+            this.label_qrkod.Size = new System.Drawing.Size(620, 28);
+            this.label_qrkod.TabIndex = 1;
+            this.label_qrkod.Text = "internet sayfamıza ulaşmak için qr \' ı taratabilirsiniz";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::deneme.Properties.Resources.qr_code_amazon;
+            this.pictureBox1.Location = new System.Drawing.Point(446, 215);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(331, 317);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // main_form
             // 
@@ -257,6 +287,10 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
+            this.xtraTabPage3.ResumeLayout(false);
+            this.xtraTabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,7 +299,6 @@
 
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraNavBar.NavBarControl navBarControl1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
         private DevExpress.XtraNavBar.NavBarItem navBarItem1;
@@ -285,5 +318,9 @@
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem6;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup4;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup5;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private System.Windows.Forms.Label label_qrkod;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }

@@ -466,6 +466,7 @@
             this.simpleButton25.Size = new System.Drawing.Size(307, 173);
             this.simpleButton25.TabIndex = 3;
             this.simpleButton25.Text = "kalem kutu\r\n120 TL";
+            this.simpleButton25.Click += new System.EventHandler(this.simpleButton25_Click);
             // 
             // simpleButton24
             // 
@@ -475,6 +476,7 @@
             this.simpleButton24.Size = new System.Drawing.Size(307, 177);
             this.simpleButton24.TabIndex = 2;
             this.simpleButton24.Text = "kalem\r\n150 TL";
+            this.simpleButton24.Click += new System.EventHandler(this.simpleButton24_Click);
             // 
             // simpleButton23
             // 
@@ -484,6 +486,7 @@
             this.simpleButton23.Size = new System.Drawing.Size(323, 173);
             this.simpleButton23.TabIndex = 1;
             this.simpleButton23.Text = "defter\r\n150 TL";
+            this.simpleButton23.Click += new System.EventHandler(this.simpleButton23_Click);
             // 
             // simpleButton22
             // 
@@ -493,6 +496,7 @@
             this.simpleButton22.Size = new System.Drawing.Size(323, 177);
             this.simpleButton22.TabIndex = 0;
             this.simpleButton22.Text = "sırt çantası \r\n350 TL";
+            this.simpleButton22.Click += new System.EventHandler(this.simpleButton22_Click);
             // 
             // simpleButton1
             // 
@@ -677,7 +681,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 566);
+            this.ClientSize = new System.Drawing.Size(1313, 600);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.panelControl1);
@@ -745,7 +749,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton17;
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
@@ -766,5 +769,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        public DevExpress.XtraEditors.ListBoxControl listBoxControl1;
     }
 }

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace deneme
 {
+   
     public partial class dialoggg : DevExpress.XtraEditors.XtraForm
     {
         public dialoggg()
@@ -25,7 +26,7 @@ namespace deneme
 
         // LabelControls
 
-
+        public customer CustomerForm { get; set; }
         public string Label2Text
         {
             get => labelControl2.Text;
@@ -34,11 +35,10 @@ namespace deneme
 
         public string Label3Text
         {
-            get => labelControl3.Text;
-            set => labelControl3.Text = value;
+            get => lbl_ürün_isim.Text;
+            set => lbl_ürün_isim.Text = value;
         }
 
-        // ListBoxControl
         public string Richtextbox
         {
             get => labelControl4.Text;
@@ -50,9 +50,12 @@ namespace deneme
             set { labelControl1.Text = value; }
 
         }
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
 
+        public customer AnaForm { get; internal set; }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
-}
+} 

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dialog));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_sepete_ekle = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -49,15 +49,15 @@
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Ürün özellikleri";
             // 
-            // simpleButton1
+            // btn_sepete_ekle
             // 
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(177, 517);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(140, 43);
-            this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "sepete ekle";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btn_sepete_ekle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btn_sepete_ekle.Location = new System.Drawing.Point(177, 517);
+            this.btn_sepete_ekle.Name = "btn_sepete_ekle";
+            this.btn_sepete_ekle.Size = new System.Drawing.Size(140, 43);
+            this.btn_sepete_ekle.TabIndex = 3;
+            this.btn_sepete_ekle.Text = "sepete ekle";
+            this.btn_sepete_ekle.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // labelControl2
             // 
@@ -114,7 +114,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.btn_sepete_ekle);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.labelControl1);
             this.Name = "dialog";
@@ -128,7 +128,7 @@
         #endregion
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btn_sepete_ekle;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private System.Windows.Forms.RichTextBox richTextBox1;

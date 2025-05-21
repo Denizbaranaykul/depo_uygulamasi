@@ -363,6 +363,16 @@ namespace deneme.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap qr_code_amazon {
+            get {
+                object obj = ResourceManager.GetObject("qr_code_amazon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap saç_köpüğü {
             get {
                 object obj = ResourceManager.GetObject("saç_köpüğü", resourceCulture);

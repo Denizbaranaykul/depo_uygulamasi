@@ -12,6 +12,7 @@ namespace deneme
         public MySqlCommand cmd;
         public MySqlDataAdapter adapter;
         public DataTable dt;
+        internal object listBoxControl1;
 
         public Form1()
         {
@@ -99,9 +100,15 @@ namespace deneme
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public static implicit operator Form1(customer v)
         {
-            
+            throw new NotImplementedException();
+        }
+
+        private void btn_kayıt_ol_Click(object sender, EventArgs e)
+        {
+            kayıt_ol yeni_kayıt = new kayıt_ol();
+            yeni_kayıt.Show();
         }
     }
 }

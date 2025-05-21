@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dialoggg));
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_ürün_isim = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_sepete_ekle2 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -47,16 +47,17 @@
             this.simpleButton2.Size = new System.Drawing.Size(140, 43);
             this.simpleButton2.TabIndex = 14;
             this.simpleButton2.Text = "geri dön";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // labelControl3
+            // lbl_ürün_isim
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(132, 12);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(133, 30);
-            this.labelControl3.TabIndex = 12;
-            this.labelControl3.Text = "Ürünün ismi";
+            this.lbl_ürün_isim.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.lbl_ürün_isim.Appearance.Options.UseFont = true;
+            this.lbl_ürün_isim.Location = new System.Drawing.Point(132, 12);
+            this.lbl_ürün_isim.Name = "lbl_ürün_isim";
+            this.lbl_ürün_isim.Size = new System.Drawing.Size(133, 30);
+            this.lbl_ürün_isim.TabIndex = 12;
+            this.lbl_ürün_isim.Text = "Ürünün ismi";
             // 
             // labelControl2
             // 
@@ -68,15 +69,14 @@
             this.labelControl2.TabIndex = 11;
             this.labelControl2.Text = ".";
             // 
-            // simpleButton1
+            // btn_sepete_ekle2
             // 
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(180, 509);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(140, 43);
-            this.simpleButton1.TabIndex = 10;
-            this.simpleButton1.Text = "sepete ekle";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btn_sepete_ekle2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_sepete_ekle.ImageOptions.SvgImage")));
+            this.btn_sepete_ekle2.Location = new System.Drawing.Point(180, 509);
+            this.btn_sepete_ekle2.Name = "btn_sepete_ekle2";
+            this.btn_sepete_ekle2.Size = new System.Drawing.Size(140, 43);
+            this.btn_sepete_ekle2.TabIndex = 10;
+            this.btn_sepete_ekle2.Text = "sepete ekle";
             // 
             // pictureEdit1
             // 
@@ -118,9 +118,9 @@
             this.ClientSize = new System.Drawing.Size(799, 579);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.lbl_ürün_isim);
             this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.btn_sepete_ekle2);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.labelControl1);
             this.Name = "dialoggg";
@@ -134,9 +134,9 @@
         #endregion
 
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl lbl_ürün_isim;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btn_sepete_ekle2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl4;
