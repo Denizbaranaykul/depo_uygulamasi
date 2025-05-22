@@ -56,5 +56,14 @@ namespace deneme
             stok_rapor stok_Rapor = new stok_rapor();
             stok_Rapor.Show();
         }
+
+        private void navBarItem2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close();
+
+        }
     }
 }

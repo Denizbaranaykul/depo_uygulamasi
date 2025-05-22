@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
@@ -141,7 +142,7 @@ namespace deneme
             {
                 using (MemoryStream ms = new MemoryStream())
                 {
-                    pictureBoxFoto.Image.Save(ms, pictureBoxFoto.Image.RawFormat);
+                    pictureBoxFoto.Image.Save(ms, ImageFormat.Jpeg);
                     resimBytes = ms.ToArray();
                 }
             }

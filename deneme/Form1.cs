@@ -110,5 +110,10 @@ namespace deneme
             kayıt_ol yeni_kayıt = new kayıt_ol();
             yeni_kayıt.Show();
         }
+
+        private void btn_close_customer_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
