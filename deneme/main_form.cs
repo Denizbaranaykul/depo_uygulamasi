@@ -50,5 +50,11 @@ namespace deneme
             ürün_güncelleme ürün_Güncelleme = new ürün_güncelleme();
             ürün_Güncelleme.Show();
         }
+
+        private void navBarItem5_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            stok_rapor stok_Rapor = new stok_rapor();
+            stok_Rapor.Show();
+        }
     }
 }

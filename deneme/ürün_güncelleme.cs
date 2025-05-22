@@ -24,7 +24,8 @@ namespace deneme
         private void ürün_güncelleme_Load(object sender, EventArgs e)
         {
             string connStr = "Server=localhost;Database=stok_takip;Uid=root;Pwd=12345";
-
+            numericFiyat.Minimum = 0;
+            numericFiyat.Maximum = 100000;
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try

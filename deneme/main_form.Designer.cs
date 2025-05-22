@@ -45,7 +45,6 @@
             this.navBarSeparatorItem4 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             this.navBarItem5 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem8 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem6 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem5 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
@@ -56,6 +55,7 @@
             this.label_qrkod = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -95,7 +95,6 @@
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1,
             this.navBarGroup2,
-            this.navBarGroup3,
             this.navBarGroup4,
             this.navBarGroup5});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
@@ -112,7 +111,8 @@
             this.navBarSeparatorItem5,
             this.navBarItem7,
             this.navBarSeparatorItem6,
-            this.navBarItem8});
+            this.navBarItem8,
+            this.navBarItem9});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 323;
@@ -162,7 +162,6 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "Ürünler";
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
@@ -206,6 +205,7 @@
             this.navBarItem5.Caption = "raporlar";
             this.navBarItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem5.ImageOptions.SvgImage")));
             this.navBarItem5.Name = "navBarItem5";
+            this.navBarItem5.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem5_LinkClicked);
             // 
             // navBarItem8
             // 
@@ -213,17 +213,6 @@
             this.navBarItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem8.ImageOptions.SvgImage")));
             this.navBarItem8.Name = "navBarItem8";
             this.navBarItem8.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem8_LinkClicked);
-            // 
-            // navBarGroup3
-            // 
-            this.navBarGroup3.Caption = "Stoklar";
-            this.navBarGroup3.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
-            this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem6),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem5),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem7),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem6)});
-            this.navBarGroup3.Name = "navBarGroup3";
             // 
             // navBarItem6
             // 
@@ -252,6 +241,9 @@
             // navBarGroup4
             // 
             this.navBarGroup4.Caption = "Müşteriler";
+            this.navBarGroup4.Expanded = true;
+            this.navBarGroup4.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem9)});
             this.navBarGroup4.Name = "navBarGroup4";
             // 
             // navBarGroup5
@@ -287,6 +279,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // navBarItem9
+            // 
+            this.navBarItem9.Caption = "Müşteriler";
+            this.navBarItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem9.ImageOptions.SvgImage")));
+            this.navBarItem9.Name = "navBarItem9";
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -319,7 +317,6 @@
         private DevExpress.XtraNavBar.NavBarItem navBarItem2;
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem2;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
-        private DevExpress.XtraNavBar.NavBarGroup navBarGroup3;
         private DevExpress.XtraNavBar.NavBarItem navBarItem3;
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem3;
         private DevExpress.XtraNavBar.NavBarItem navBarItem4;
@@ -336,5 +333,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraNavBar.NavBarItem navBarItem8;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem9;
     }
 }
