@@ -7,7 +7,7 @@ namespace deneme
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
-        public MySqlConnection conn = new MySqlConnection("Server=localhost;Database=stok_takip;Uid=root;Pwd=12345");
+        public static MySqlConnection conn = new MySqlConnection("Server=localhost;Database=stok_takip;Uid=root;Pwd=12345");
 
         public MySqlCommand cmd;
         public MySqlDataAdapter adapter;

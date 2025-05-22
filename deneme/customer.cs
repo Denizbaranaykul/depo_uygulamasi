@@ -1,11 +1,13 @@
 ﻿using DevExpress.CodeParser;
 using DevExpress.XtraEditors;
 using DevExpress.XtraRichEdit.Model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,12 +31,59 @@ namespace deneme
         {
             label.Text = order + " TL";
         }
+        static void data_pull()
+        {
+            string query= "SELECT * FROM urunler";
+        }
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             string name = "Iphone 14";
             string cost = "43.000 TL";
             string explation = "6.1 inç Super Retina XDR ekran\r\nTüm gün süren pil ömrü ve 20 saate kadar video oynatma\r\nCeramic Shield ve suya dayanıklılık\r\n5 çekirdekli GPU’ya sahip A15 Bionic çip ile ışık hızında performans\r\nHer ışıkta daha iyi fotoğraflar için gelişmiş kamera sistemi\r\nSorunsuz, titremeyen videolar çekmek için Hareket modu\r\nSaniyede 30 kareye kadar 4K Dolby Vision çekim yapan Sinematik mod\r\nSiz yardım çağıramadığınızda yardım çağıran önemli güvenlik özelliği Trafik Kazası Algılama\r\nKişiselleştirmenin, iletişim kurmanın ve paylaşmanın daha kolay yollarını sunan iOS 16";
             showdialog(name, cost, explation,Properties.Resources.iphone);
+        }
+        
+        private void ShowProductByName(string urunAdi)
+        {
+            
+            string connectionString = "Server=localhost;Database=;Uid=root;Pwd=12345";
+            string query = "SELECT urun_adi, fiyat, explation, foto FROM urunler WHERE urun_adi = @urunAdi";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@urunAdi", urunAdi);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string name = reader["urun_adi"].ToString();
+                            string cost = Convert.ToDecimal(reader["fiyat"]).ToString("C2");
+                            string explanation = reader["explation"].ToString();
+
+                            byte[] imageBytes = (byte[])reader["foto"];
+                            Image art = null;
+
+                            if (imageBytes != null && imageBytes.Length > 0)
+                            {
+                                using (MemoryStream ms = new MemoryStream(imageBytes))
+                                {
+                                    art = Image.FromStream(ms);
+                                }
+                            }
+
+                            showdialog(name, cost, explanation, art);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ürün bulunamadı.");
+                        }
+                    }
+                }
+            }
         }
 
         static void showdialog(string name,string cost,string explantion,Image art)
@@ -241,10 +290,7 @@ namespace deneme
 
         private void simpleButton24_Click(object sender, EventArgs e)
         {
-            string name = "kalem";
-            string cost = "150 TL";
-            string explation = "✏️ Temel Özellikler\r\nÜrün Adı: 0.7 mm Uçlu Kalem\r\n\r\nTanım: 0.7 mm kalınlığında grafit uç kullanan, mekanizmalı yazı kalemi\r\n\r\nKullanım Alanı: Günlük yazı, not alma, okul, ofis, teknik olmayan çizimler\r\n\r\n📏 Mekanik / Fiziksel Özellikler\r\nUç Kalınlığı: 0.7 mm (orta kalınlık – hem yazı hem çizim için ideal)\r\n\r\nYazı Tipi: Daha koyu ve belirgin çizgi\r\n\r\nUç Dayanıklılığı: 0.5 mm'ye göre daha kırılmaya dirençli\r\n\r\nKullanım: Sert bastırarak yazanlar için uygundur\r\n\r\n\U0001f9f1 Malzeme ve Yapı\r\nGövde Malzemesi: Plastik, metal veya hibrit (markaya göre)\r\n\r\nTutuş Yeri: Kaymaz kauçuk, silikon ya da plastik grip\r\n\r\nSilgi: Genellikle uç kısmında kapağın altında\r\n\r\nYedek Uç: HB, B, 2B gibi farklı sertliklerde 0.7 mm uçlarla çalışır\r\n\r\n⚙️ Fonksiyonel Özellikler\r\nMekanizma: Tıklamalı veya döner mekanizma\r\n\r\nUç Çıkışı: Basmalı sistemle kontrollü uç çıkışı\r\n\r\nYedekleme: Kalem içinde 3–5 yedek uç taşıyabilir\r\n\r\n🎨 Tasarım ve Renkler\r\nÇeşitli renk ve tasarımlarda bulunabilir (mavi, siyah, şeffaf, pastel tonlar vb.)\r\n\r\nHem klasik hem modern modeller mevcuttur";
-            showdialog(name, cost, explation, Properties.Resources.kalem);
+            ShowProductByName("kalem");
         }
 
         private void simpleButton23_Click(object sender, EventArgs e)
