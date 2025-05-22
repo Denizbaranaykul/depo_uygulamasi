@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
+
 
 namespace deneme
 {
@@ -25,8 +25,6 @@ namespace deneme
             get => pictureEdit1.Image;
             set => pictureEdit1.Image = value;
         }
-
-        // LabelControls
 
         public customer CustomerForm { get; set; }
         public string Label2Text
@@ -63,17 +61,12 @@ namespace deneme
         private void btn_sepete_ekle2_Click(object sender, EventArgs e)
         {
             Form1.customerForm.listBoxControl1.Items.Add(lbl_ürün_isim.Text);
-
-            // Label'dan fiyatı al
             string order = labelControl2.Text;
 
-            // "TL" kaldır, boşluk temizle, binlik ayraçları kaldır
             string fiyatMetni = order.Replace("TL", "").Trim().Replace(".", "");
 
-            // Kültürü ayarla (ondalık için virgül desteklenmesi adına)
             var turkce = new CultureInfo("tr-TR");
 
-            // Fiyatı ondalıklı olarak çöz
             if (decimal.TryParse(fiyatMetni, NumberStyles.Any, turkce, out decimal fiyat))
             {
                 decimal mevcutTutar = 0;
@@ -86,7 +79,6 @@ namespace deneme
 
                 decimal yeniTutar = mevcutTutar + fiyat;
 
-                // Sonucu göster: 2 ondalık, binlik ayraçlı
                 Form1.customerForm.lbl_order.Text = yeniTutar.ToString("N2", turkce) + " TL";
             }
             else

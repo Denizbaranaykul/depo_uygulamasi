@@ -44,6 +44,7 @@
             this.navBarItem4 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem4 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             this.navBarItem5 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem8 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem6 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem5 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
@@ -55,7 +56,6 @@
             this.label_qrkod = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.panel_main = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -63,7 +63,6 @@
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_main)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -83,7 +82,6 @@
             // 
             // xtraTabPage2
             // 
-            this.xtraTabPage2.Controls.Add(this.panel_main);
             this.xtraTabPage2.Controls.Add(this.navBarControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1279, 802);
@@ -113,7 +111,8 @@
             this.navBarItem6,
             this.navBarSeparatorItem5,
             this.navBarItem7,
-            this.navBarSeparatorItem6});
+            this.navBarSeparatorItem6,
+            this.navBarItem8});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 323;
@@ -170,7 +169,8 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem3),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem4),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem4),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5)});
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem8)});
             this.navBarGroup2.Name = "navBarGroup2";
             // 
             // navBarItem3
@@ -192,6 +192,7 @@
             this.navBarItem4.Caption = "Ürün silme";
             this.navBarItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem4.ImageOptions.SvgImage")));
             this.navBarItem4.Name = "navBarItem4";
+            this.navBarItem4.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem4_LinkClicked);
             // 
             // navBarSeparatorItem4
             // 
@@ -205,6 +206,13 @@
             this.navBarItem5.Caption = "raporlar";
             this.navBarItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem5.ImageOptions.SvgImage")));
             this.navBarItem5.Name = "navBarItem5";
+            // 
+            // navBarItem8
+            // 
+            this.navBarItem8.Caption = "Ürün güncelleme";
+            this.navBarItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem8.ImageOptions.SvgImage")));
+            this.navBarItem8.Name = "navBarItem8";
+            this.navBarItem8.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem8_LinkClicked);
             // 
             // navBarGroup3
             // 
@@ -279,13 +287,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel_main
-            // 
-            this.panel_main.Location = new System.Drawing.Point(353, 17);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(888, 699);
-            this.panel_main.TabIndex = 3;
-            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -303,7 +304,6 @@
             this.xtraTabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_main)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,6 +335,6 @@
         private System.Windows.Forms.Label label_qrkod;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
-        private DevExpress.XtraEditors.PanelControl panel_main;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem8;
     }
 }

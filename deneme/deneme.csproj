@@ -163,6 +163,18 @@
     <Compile Include="yönetici_islemler.Designer.cs">
       <DependentUpon>yönetici_islemler.cs</DependentUpon>
     </Compile>
+    <Compile Include="ürün_güncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ürün_güncelleme.Designer.cs">
+      <DependentUpon>ürün_güncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ürün_silme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ürün_silme.Designer.cs">
+      <DependentUpon>ürün_silme.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="customer.resx">
       <DependentUpon>customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +203,12 @@
     </Compile>
     <EmbeddedResource Include="yönetici_islemler.resx">
       <DependentUpon>yönetici_islemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ürün_güncelleme.resx">
+      <DependentUpon>ürün_güncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ürün_silme.resx">
+      <DependentUpon>ürün_silme.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />

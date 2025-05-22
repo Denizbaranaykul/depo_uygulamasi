@@ -678,7 +678,7 @@
             // 
             // customer
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(73)))), ((int)(((byte)(88)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

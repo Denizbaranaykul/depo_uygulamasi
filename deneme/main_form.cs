@@ -38,5 +38,17 @@ namespace deneme
             ürün_islem urunEkleForm = new ürün_islem();
             urunEkleForm.Show();
         }
+
+        private void navBarItem4_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            ürün_silme ürün_Silme = new ürün_silme();
+            ürün_Silme.Show();
+        }
+
+        private void navBarItem8_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            ürün_güncelleme ürün_Güncelleme = new ürün_güncelleme();
+            ürün_Güncelleme.Show();
+        }
     }
 }
