@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customer));
-            this.lbl_order = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_orderr = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
@@ -108,15 +108,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbl_order
+            // lbl_orderr
             // 
-            this.lbl_order.Appearance.Font = new System.Drawing.Font("Tahoma", 25F);
-            this.lbl_order.Appearance.Options.UseFont = true;
-            this.lbl_order.Location = new System.Drawing.Point(272, 484);
-            this.lbl_order.Name = "lbl_order";
-            this.lbl_order.Size = new System.Drawing.Size(118, 51);
-            this.lbl_order.TabIndex = 0;
-            this.lbl_order.Text = "0.0 TL";
+            this.lbl_orderr.Appearance.Font = new System.Drawing.Font("Tahoma", 25F);
+            this.lbl_orderr.Appearance.Options.UseFont = true;
+            this.lbl_orderr.Location = new System.Drawing.Point(272, 484);
+            this.lbl_orderr.Name = "lbl_orderr";
+            this.lbl_orderr.Size = new System.Drawing.Size(118, 51);
+            this.lbl_orderr.TabIndex = 0;
+            this.lbl_orderr.Text = "0.0 TL";
             // 
             // panelControl1
             // 
@@ -156,6 +156,7 @@
             this.xtraTabPage3.Controls.Add(this.simpleButton4);
             this.xtraTabPage3.Controls.Add(this.simpleButton3);
             this.xtraTabPage3.Controls.Add(this.simpleButton2);
+            this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
             this.xtraTabPage3.Size = new System.Drawing.Size(888, 393);
             this.xtraTabPage3.Text = "teknoloji ürünleri";
@@ -167,7 +168,7 @@
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(360, 178);
             this.simpleButton7.TabIndex = 5;
-            this.simpleButton7.Text = "xbox one s\r\n32.000 tl";
+            this.simpleButton7.Text = "xbox one s\r\n\r\n";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // simpleButton6
@@ -177,7 +178,7 @@
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(399, 178);
             this.simpleButton6.TabIndex = 4;
-            this.simpleButton6.Text = "playstation 5\r\n38.001 tl";
+            this.simpleButton6.Text = "playstation 5\r\n\r\n";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // simpleButton5
@@ -187,17 +188,17 @@
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(399, 178);
             this.simpleButton5.TabIndex = 3;
-            this.simpleButton5.Text = "playstation 5 kolu\r\n1.500 TL";
+            this.simpleButton5.Text = "playstation 5 kolu\r\n\r\n";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton4
             // 
-            this.simpleButton4.ImageOptions.Image = global::deneme.Properties.Resources.laptop;
+            this.simpleButton4.ImageOptions.Image = global::deneme.Properties.Resources.laptop1;
             this.simpleButton4.Location = new System.Drawing.Point(414, 29);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(433, 178);
             this.simpleButton4.TabIndex = 2;
-            this.simpleButton4.Text = "Msi\r\nGameing Laptop\r\n43.699 TL";
+            this.simpleButton4.Text = "laptop";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton3
@@ -210,7 +211,7 @@
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(360, 178);
             this.simpleButton3.TabIndex = 1;
-            this.simpleButton3.Text = "iPad Air M3\r\n27000 tl";
+            this.simpleButton3.Text = "iPad Air M3\r\n\r\n";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton2
@@ -221,7 +222,7 @@
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(360, 178);
             this.simpleButton2.TabIndex = 0;
-            this.simpleButton2.Text = "İphone 14\r\n43.999 TL";
+            this.simpleButton2.Text = "İphone 14\r\n";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // xtraTabPage1
@@ -251,7 +252,7 @@
             this.simpleButton29.Name = "simpleButton29";
             this.simpleButton29.Size = new System.Drawing.Size(349, 155);
             this.simpleButton29.TabIndex = 15;
-            this.simpleButton29.Text = "topuklu ayakkabı \r\n700 TL";
+            this.simpleButton29.Text = "topuklu ayakkabı \r\n\r\n";
             this.simpleButton29.Click += new System.EventHandler(this.simpleButton29_Click);
             // 
             // simpleButton28
@@ -261,7 +262,7 @@
             this.simpleButton28.Name = "simpleButton28";
             this.simpleButton28.Size = new System.Drawing.Size(401, 158);
             this.simpleButton28.TabIndex = 14;
-            this.simpleButton28.Text = "çocuk elbise\r\n800 TL";
+            this.simpleButton28.Text = "çocuk elbise\r\n";
             this.simpleButton28.Click += new System.EventHandler(this.simpleButton28_Click);
             // 
             // simpleButton27
@@ -271,7 +272,7 @@
             this.simpleButton27.Name = "simpleButton27";
             this.simpleButton27.Size = new System.Drawing.Size(341, 178);
             this.simpleButton27.TabIndex = 13;
-            this.simpleButton27.Text = " elbise \r\n1000 TL";
+            this.simpleButton27.Text = " elbise \r\n\r\n";
             this.simpleButton27.Click += new System.EventHandler(this.simpleButton27_Click);
             // 
             // simpleButton26
@@ -281,7 +282,7 @@
             this.simpleButton26.Name = "simpleButton26";
             this.simpleButton26.Size = new System.Drawing.Size(401, 158);
             this.simpleButton26.TabIndex = 12;
-            this.simpleButton26.Text = "elbise \r\n1200 TL";
+            this.simpleButton26.Text = "elbise \r\n\r\n";
             this.simpleButton26.Click += new System.EventHandler(this.simpleButton26_Click);
             // 
             // simpleButton8
@@ -291,7 +292,7 @@
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(401, 178);
             this.simpleButton8.TabIndex = 11;
-            this.simpleButton8.Text = "converse ayakkabı \r\n1000 TL";
+            this.simpleButton8.Text = "converse ayakkabı \r\n\r\n";
             this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
             // 
             // simpleButton9
@@ -301,7 +302,7 @@
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(345, 178);
             this.simpleButton9.TabIndex = 10;
-            this.simpleButton9.Text = "gömlek \r\n600 TL";
+            this.simpleButton9.Text = "gömlek \r\n\r\n";
             this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
             // 
             // simpleButton10
@@ -311,7 +312,7 @@
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Size = new System.Drawing.Size(349, 158);
             this.simpleButton10.TabIndex = 9;
-            this.simpleButton10.Text = "6\'lı çorap\r\n150 TL";
+            this.simpleButton10.Text = "6\'lı çorap\r\n";
             this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
             // 
             // simpleButton11
@@ -321,7 +322,7 @@
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Size = new System.Drawing.Size(345, 170);
             this.simpleButton11.TabIndex = 8;
-            this.simpleButton11.Text = "spor ayakkabı\r\n800 TL";
+            this.simpleButton11.Text = "spor ayakkabı\r\n\r\n";
             this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
             // 
             // simpleButton12
@@ -331,7 +332,7 @@
             this.simpleButton12.Name = "simpleButton12";
             this.simpleButton12.Size = new System.Drawing.Size(401, 178);
             this.simpleButton12.TabIndex = 7;
-            this.simpleButton12.Text = "kumaş pantolon\r\n900 TL";
+            this.simpleButton12.Text = "kumaş pantolon\r\n\r\n";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
             // 
             // simpleButton13
@@ -341,7 +342,7 @@
             this.simpleButton13.Name = "simpleButton13";
             this.simpleButton13.Size = new System.Drawing.Size(401, 178);
             this.simpleButton13.TabIndex = 6;
-            this.simpleButton13.Text = "ispanyol paça pantolon\r\n600 TL\r\n";
+            this.simpleButton13.Text = "ispanyol paça pantolon\r\n\r\n\r\n";
             this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);
             // 
             // xtraTabPage2
@@ -362,7 +363,7 @@
             this.simpleButton17.Name = "simpleButton17";
             this.simpleButton17.Size = new System.Drawing.Size(388, 166);
             this.simpleButton17.TabIndex = 4;
-            this.simpleButton17.Text = "mutfak masası \r\n8.000 TL";
+            this.simpleButton17.Text = "mutfak masası \r\n";
             this.simpleButton17.Click += new System.EventHandler(this.simpleButton17_Click);
             // 
             // simpleButton15
@@ -372,7 +373,7 @@
             this.simpleButton15.Name = "simpleButton15";
             this.simpleButton15.Size = new System.Drawing.Size(300, 166);
             this.simpleButton15.TabIndex = 3;
-            this.simpleButton15.Text = "gardırop\r\n12.000 TL";
+            this.simpleButton15.Text = "gardırop\r\n";
             this.simpleButton15.Click += new System.EventHandler(this.simpleButton15_Click);
             // 
             // simpleButton16
@@ -382,7 +383,7 @@
             this.simpleButton16.Name = "simpleButton16";
             this.simpleButton16.Size = new System.Drawing.Size(451, 166);
             this.simpleButton16.TabIndex = 2;
-            this.simpleButton16.Text = "oturma grubu \r\nkoltuk takımı\r\n35.000 TL\r\n";
+            this.simpleButton16.Text = "oturma grubu \r\nkoltuk takımı\r\n\r\n";
             this.simpleButton16.Click += new System.EventHandler(this.simpleButton16_Click);
             // 
             // simpleButton14
@@ -392,7 +393,7 @@
             this.simpleButton14.Name = "simpleButton14";
             this.simpleButton14.Size = new System.Drawing.Size(304, 166);
             this.simpleButton14.TabIndex = 0;
-            this.simpleButton14.Text = "ofis masası \r\n10.000 TL";
+            this.simpleButton14.Text = "ofis masası \r\n";
             this.simpleButton14.Click += new System.EventHandler(this.simpleButton14_Click);
             // 
             // xtraTabPage4
@@ -413,7 +414,7 @@
             this.simpleButton21.Name = "simpleButton21";
             this.simpleButton21.Size = new System.Drawing.Size(319, 178);
             this.simpleButton21.TabIndex = 3;
-            this.simpleButton21.Text = "şampuan\r\n200 TL\r\n";
+            this.simpleButton21.Text = "şampuan\r\n\r\n";
             this.simpleButton21.Click += new System.EventHandler(this.simpleButton21_Click);
             // 
             // simpleButton20
@@ -423,7 +424,7 @@
             this.simpleButton20.Name = "simpleButton20";
             this.simpleButton20.Size = new System.Drawing.Size(319, 179);
             this.simpleButton20.TabIndex = 2;
-            this.simpleButton20.Text = "saç kremi \r\n120 TL";
+            this.simpleButton20.Text = "saç kremi \r\n";
             this.simpleButton20.Click += new System.EventHandler(this.simpleButton20_Click);
             // 
             // simpleButton19
@@ -433,7 +434,7 @@
             this.simpleButton19.Name = "simpleButton19";
             this.simpleButton19.Size = new System.Drawing.Size(307, 178);
             this.simpleButton19.TabIndex = 1;
-            this.simpleButton19.Text = "saç köpüğü \r\n150 TL";
+            this.simpleButton19.Text = "saç köpüğü \r\n";
             this.simpleButton19.Click += new System.EventHandler(this.simpleButton19_Click);
             // 
             // simpleButton18
@@ -443,7 +444,7 @@
             this.simpleButton18.Name = "simpleButton18";
             this.simpleButton18.Size = new System.Drawing.Size(307, 168);
             this.simpleButton18.TabIndex = 0;
-            this.simpleButton18.Text = "parfüm\r\n200 TL\r\n";
+            this.simpleButton18.Text = "parfüm\r\n\r\n";
             this.simpleButton18.Click += new System.EventHandler(this.simpleButton18_Click);
             // 
             // xtraTabPage5
@@ -466,7 +467,7 @@
             this.simpleButton25.Name = "simpleButton25";
             this.simpleButton25.Size = new System.Drawing.Size(307, 173);
             this.simpleButton25.TabIndex = 3;
-            this.simpleButton25.Text = "kalem kutu\r\n120 TL";
+            this.simpleButton25.Text = "kalem kutu\r\n";
             this.simpleButton25.Click += new System.EventHandler(this.simpleButton25_Click);
             // 
             // simpleButton24
@@ -476,7 +477,7 @@
             this.simpleButton24.Name = "simpleButton24";
             this.simpleButton24.Size = new System.Drawing.Size(307, 177);
             this.simpleButton24.TabIndex = 2;
-            this.simpleButton24.Text = "kalem\r\n150 TL";
+            this.simpleButton24.Text = "kalem\r\n";
             this.simpleButton24.Click += new System.EventHandler(this.simpleButton24_Click);
             // 
             // simpleButton23
@@ -486,7 +487,7 @@
             this.simpleButton23.Name = "simpleButton23";
             this.simpleButton23.Size = new System.Drawing.Size(323, 173);
             this.simpleButton23.TabIndex = 1;
-            this.simpleButton23.Text = "defter\r\n150 TL";
+            this.simpleButton23.Text = "defter\r\n";
             this.simpleButton23.Click += new System.EventHandler(this.simpleButton23_Click);
             // 
             // simpleButton22
@@ -496,7 +497,7 @@
             this.simpleButton22.Name = "simpleButton22";
             this.simpleButton22.Size = new System.Drawing.Size(323, 177);
             this.simpleButton22.TabIndex = 0;
-            this.simpleButton22.Text = "sırt çantası \r\n350 TL";
+            this.simpleButton22.Text = "sırt çantası \r\n";
             this.simpleButton22.Click += new System.EventHandler(this.simpleButton22_Click);
             // 
             // simpleButton1
@@ -524,6 +525,7 @@
             this.listBoxControl1.Name = "listBoxControl1";
             this.listBoxControl1.Size = new System.Drawing.Size(239, 367);
             this.listBoxControl1.TabIndex = 2;
+            this.listBoxControl1.DoubleClick += new System.EventHandler(this.listBoxControl1_DoubleClick);
             // 
             // navBarControl2
             // 
@@ -697,7 +699,7 @@
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.panelControl1);
-            this.Controls.Add(this.lbl_order);
+            this.Controls.Add(this.lbl_orderr);
             this.Name = "customer";
             this.Text = "customer";
             this.Load += new System.EventHandler(this.customer_Load);
@@ -781,7 +783,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         public DevExpress.XtraEditors.ListBoxControl listBoxControl1;
-        public DevExpress.XtraEditors.LabelControl lbl_order;
+        public DevExpress.XtraEditors.LabelControl lbl_orderr;
         private DevExpress.XtraEditors.SimpleButton simpleButton30;
     }
 }

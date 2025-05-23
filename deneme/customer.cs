@@ -32,10 +32,46 @@ namespace deneme
         {
             label.Text = order + " TL";
         }
-        static void data_pull()
+        private void sold(string urunAdi)
         {
-            string query= "SELECT * FROM urunler";
+            string connectionString = "Server=localhost;Database=stok_takip;Uid=root;Pwd=12345";
+            string updateQuery = "UPDATE urunler SET stok_adedi = stok_adedi - 1 WHERE urun_adi = @urunAdi";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(updateQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@urunAdi", urunAdi);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    
+                }
+            }
         }
+        private void reduce(string urunAdi)
+        {
+            string connectionString = "Server=localhost;Database=stok_takip;Uid=root;Pwd=12345";
+            string selectQuery = "SELECT fiyat FROM urunler WHERE urun_adi = @urunAdi";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(selectQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@urunAdi", urunAdi);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            double cost = Convert.ToDouble(reader["fiyat"]);
+                            order =order- cost;
+                        }
+                    }
+                }
+            }
+        }
+
 
 
         private void ShowProductByName(string urunAdi)
@@ -114,7 +150,7 @@ namespace deneme
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
-            ShowProductByName("Msi Gameing Laptop");
+            ShowProductByName("laptop");
         }
 
         private void simpleButton14_Click(object sender, EventArgs e)
@@ -262,13 +298,18 @@ namespace deneme
 
         private void customer_Load(object sender, EventArgs e)
         {
-            lblorder(lbl_order);
+            lblorder(lbl_orderr);
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            for(int i=0;i<listBoxControl1.ItemCount;i++)
+            {
+                sold(listBoxControl1.Items[i].ToString());
+            }
+
             listBoxControl1.Items.Clear();
-            Form1.customerForm.lbl_order.Text = "0,00 TL";
+            Form1.customerForm.lbl_orderr.Text = "0,00 TL";
         }
 
         private void simpleButton30_Click(object sender, EventArgs e)
@@ -276,6 +317,17 @@ namespace deneme
             Form1 form2 = new Form1();
             form2.Show();
             this.Hide();
+        }
+
+        private void listBoxControl1_DoubleClick(object sender, EventArgs e)
+        {
+            int index = listBoxControl1.SelectedIndex;
+            if (index >= 0)
+            {
+                reduce(listBoxControl1.Items[index].ToString());
+                lblorder(lbl_orderr);
+                listBoxControl1.Items.RemoveAt(index);
+            }
         }
     }
 }

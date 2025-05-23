@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using MySql.Data.MySqlClient;
+using System.Drawing.Imaging;
 
 namespace deneme
 {
@@ -141,12 +142,26 @@ namespace deneme
             byte[] resimBytes = null;
             if (pictureBoxFoto.Image != null)
             {
-                using (MemoryStream ms = new MemoryStream())
+                try
                 {
-                    pictureBoxFoto.Image.Save(ms, ImageFormat.Jpeg);
-                    resimBytes = ms.ToArray();
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        // Bağımsız bellek kopyası al
+                        using (Bitmap bmp = new Bitmap(pictureBoxFoto.Image))
+                        {
+                            bmp.Save(ms, ImageFormat.Jpeg);
+                        }
+                        resimBytes = ms.ToArray();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    XtraMessageBox.Show("Resim işlenirken hata: " + ex.Message);
+                    return; // İşlemi durdur
                 }
             }
+
+
 
             string connStr = "Server=localhost;Database=stok_takip;Uid=root;Pwd=12345";
             using (MySqlConnection conn = new MySqlConnection(connStr))

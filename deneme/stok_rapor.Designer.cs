@@ -37,14 +37,14 @@
             this.chartControl1.Location = new System.Drawing.Point(33, 42);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(1034, 572);
+            this.chartControl1.Size = new System.Drawing.Size(1776, 626);
             this.chartControl1.TabIndex = 0;
             // 
             // stok_rapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 641);
+            this.ClientSize = new System.Drawing.Size(1821, 680);
             this.Controls.Add(this.chartControl1);
             this.Name = "stok_rapor";
             this.Text = "stok_rapor";

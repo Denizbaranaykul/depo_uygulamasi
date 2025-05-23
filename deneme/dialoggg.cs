@@ -67,19 +67,20 @@ namespace deneme
 
             var turkce = new CultureInfo("tr-TR");
 
-            if (decimal.TryParse(fiyatMetni, NumberStyles.Any, turkce, out decimal fiyat))
+            if (double.TryParse(fiyatMetni, NumberStyles.Any, turkce, out double fiyat))
             {
-                decimal mevcutTutar = 0;
+                double mevcutTutar = 0;
 
-                if (!string.IsNullOrEmpty(Form1.customerForm.lbl_order.Text))
+                if (!string.IsNullOrEmpty(Form1.customerForm.lbl_orderr.Text))
                 {
-                    string mevcutMetin = Form1.customerForm.lbl_order.Text.Replace("TL", "").Trim().Replace(".", "");
-                    decimal.TryParse(mevcutMetin, NumberStyles.Any, turkce, out mevcutTutar);
+                    string mevcutMetin = Form1.customerForm.lbl_orderr.Text.Replace("TL", "").Trim().Replace(".", "");
+                    double.TryParse(mevcutMetin, NumberStyles.Any, turkce, out mevcutTutar);
                 }
 
-                decimal yeniTutar = mevcutTutar + fiyat;
+                double yeniTutar = mevcutTutar + fiyat;
 
-                Form1.customerForm.lbl_order.Text = yeniTutar.ToString("N2", turkce) + " TL";
+                customer.order = yeniTutar;
+                customer.lblorder(Form1.customerForm.lbl_orderr);
             }
             else
             {

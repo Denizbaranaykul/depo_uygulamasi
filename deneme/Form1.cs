@@ -55,6 +55,8 @@ namespace deneme
             catch (Exception ex)
             {
                 MessageBox.Show("Hata: " + ex.Message);
+               
+                
             }
             finally
             {

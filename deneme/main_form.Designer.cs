@@ -234,6 +234,7 @@
             // 
             this.navBarGroup5.Caption = "Ayarlar";
             this.navBarGroup5.Expanded = true;
+            this.navBarGroup5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup5.ImageOptions.LargeImage")));
             this.navBarGroup5.Name = "navBarGroup5";
             // 
             // navBarItem6
