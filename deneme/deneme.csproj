@@ -168,11 +168,11 @@
     <Compile Include="XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="yönetici_islemler.cs">
+    <Compile Include="ürün_ekleme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="yönetici_islemler.Designer.cs">
-      <DependentUpon>yönetici_islemler.cs</DependentUpon>
+    <Compile Include="ürün_ekleme.Designer.cs">
+      <DependentUpon>ürün_ekleme.cs</DependentUpon>
     </Compile>
     <Compile Include="ürün_güncelleme.cs">
       <SubType>Form</SubType>
@@ -215,8 +215,8 @@
     <EmbeddedResource Include="stok_rapor.resx">
       <DependentUpon>stok_rapor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="yönetici_islemler.resx">
-      <DependentUpon>yönetici_islemler.cs</DependentUpon>
+    <EmbeddedResource Include="ürün_ekleme.resx">
+      <DependentUpon>ürün_ekleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ürün_güncelleme.resx">
       <DependentUpon>ürün_güncelleme.cs</DependentUpon>
@@ -352,6 +352,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\qr_code_amazon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulasık_makıne.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pantul.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saç_kurutma.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

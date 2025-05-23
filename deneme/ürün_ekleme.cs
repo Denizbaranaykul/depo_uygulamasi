@@ -25,6 +25,7 @@ namespace deneme
             decimal fiyat = Convert.ToDecimal(txtFiyat.Text);
             string kategori = cmbKategori.Text;
             int stokAdedi = Convert.ToInt32(txtStokAdedi.Text);
+            string aciklama = richTextBox1.Text; // RichTextBox'tan açıklamayı alıyoruz
 
             string connStr = "Server=localhost;Database=stok_takip;Uid=root;Pwd=12345";
 
@@ -33,13 +34,14 @@ namespace deneme
                 try
                 {
                     conn.Open();
-                    string sql = "INSERT INTO urunler (urun_adi, fiyat, kategori, stok_adedi) VALUES (@adi, @fiyat, @kategori, @stok)";
+                    string sql = "INSERT INTO urunler (urun_adi, fiyat, kategori, stok_adedi, explation) VALUES (@adi, @fiyat, @kategori, @stok, @aciklama)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                     {
                         cmd.Parameters.AddWithValue("@adi", urunAdi);
                         cmd.Parameters.AddWithValue("@fiyat", fiyat);
                         cmd.Parameters.AddWithValue("@kategori", kategori);
                         cmd.Parameters.AddWithValue("@stok", stokAdedi);
+                        cmd.Parameters.AddWithValue("@aciklama", aciklama); // Açıklamayı parametre olarak ekliyoruz
                         cmd.ExecuteNonQuery();
                     }
 

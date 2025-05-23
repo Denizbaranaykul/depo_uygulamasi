@@ -41,6 +41,8 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
@@ -112,9 +114,9 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(100, 459);
+            this.simpleButton1.Location = new System.Drawing.Point(648, 496);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(111, 41);
+            this.simpleButton1.Size = new System.Drawing.Size(128, 53);
             this.simpleButton1.TabIndex = 6;
             this.simpleButton1.Text = "kaydet";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -138,10 +140,10 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(302, 133);
+            this.gridControl1.Location = new System.Drawing.Point(301, 75);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(550, 214);
+            this.gridControl1.Size = new System.Drawing.Size(550, 302);
             this.gridControl1.TabIndex = 9;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -151,11 +153,33 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(97, 414);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(156, 28);
+            this.labelControl5.TabIndex = 10;
+            this.labelControl5.Text = "ürün açıklaması";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(73)))), ((int)(((byte)(88)))));
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox1.Location = new System.Drawing.Point(97, 474);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(347, 96);
+            this.richTextBox1.TabIndex = 11;
+            this.richTextBox1.Text = "";
+            // 
             // ürün_islem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 612);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.txtStokAdedi);
@@ -195,5 +219,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

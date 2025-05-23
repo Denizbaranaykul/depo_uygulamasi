@@ -91,6 +91,7 @@
             this.navBarItem8 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup6 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.simpleButton30 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -676,6 +677,15 @@
             this.navBarGroup6.Caption = "Ayarlar";
             this.navBarGroup6.Name = "navBarGroup6";
             // 
+            // simpleButton30
+            // 
+            this.simpleButton30.Location = new System.Drawing.Point(73, 494);
+            this.simpleButton30.Name = "simpleButton30";
+            this.simpleButton30.Size = new System.Drawing.Size(114, 27);
+            this.simpleButton30.TabIndex = 4;
+            this.simpleButton30.Text = "oturumu kapat";
+            this.simpleButton30.Click += new System.EventHandler(this.simpleButton30_Click);
+            // 
             // customer
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(73)))), ((int)(((byte)(88)))));
@@ -683,6 +693,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1313, 600);
+            this.Controls.Add(this.simpleButton30);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.panelControl1);
@@ -771,5 +782,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         public DevExpress.XtraEditors.ListBoxControl listBoxControl1;
         public DevExpress.XtraEditors.LabelControl lbl_order;
+        private DevExpress.XtraEditors.SimpleButton simpleButton30;
     }
 }

@@ -22,7 +22,8 @@ namespace deneme
             string connStr = "Server=localhost;Database=stok_takip;Uid=root;Pwd=12345";
             numericFiyat.Minimum = 0;
             numericFiyat.Maximum = 100000;
-
+            numericStok.Minimum = 0;
+            numericStok.Maximum = 10000;
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try

@@ -37,19 +37,19 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(329, 369);
+            this.btnSil.Location = new System.Drawing.Point(293, 418);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(94, 29);
+            this.btnSil.Size = new System.Drawing.Size(143, 48);
             this.btnSil.TabIndex = 0;
             this.btnSil.Text = "ürün silme";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(146, 113);
+            this.gridControl1.Location = new System.Drawing.Point(40, 32);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(457, 200);
+            this.gridControl1.Size = new System.Drawing.Size(689, 352);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

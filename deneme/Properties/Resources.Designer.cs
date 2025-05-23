@@ -73,6 +73,16 @@ namespace deneme.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap bulasık_makıne {
+            get {
+                object obj = ResourceManager.GetObject("bulasık_makıne", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap converse {
             get {
                 object obj = ResourceManager.GetObject("converse", resourceCulture);
@@ -283,6 +293,16 @@ namespace deneme.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap laptop1 {
+            get {
+                object obj = ResourceManager.GetObject("laptop1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap mouse {
             get {
                 object obj = ResourceManager.GetObject("mouse", resourceCulture);
@@ -316,6 +336,16 @@ namespace deneme.Properties {
         internal static System.Drawing.Bitmap oyunkolu {
             get {
                 object obj = ResourceManager.GetObject("oyunkolu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap pantul {
+            get {
+                object obj = ResourceManager.GetObject("pantul", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +416,16 @@ namespace deneme.Properties {
         internal static System.Drawing.Bitmap saç_kremi {
             get {
                 object obj = ResourceManager.GetObject("saç_kremi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap saç_kurutma {
+            get {
+                object obj = ResourceManager.GetObject("saç_kurutma", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

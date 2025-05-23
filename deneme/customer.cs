@@ -270,6 +270,13 @@ namespace deneme
             listBoxControl1.Items.Clear();
             Form1.customerForm.lbl_order.Text = "0,00 TL";
         }
+
+        private void simpleButton30_Click(object sender, EventArgs e)
+        {
+            Form1 form2 = new Form1();
+            form2.Show();
+            this.Hide();
+        }
     }
 }
 
