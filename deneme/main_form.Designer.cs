@@ -56,6 +56,7 @@
             this.label_qrkod = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.navBarItem10 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -112,7 +113,8 @@
             this.navBarItem7,
             this.navBarSeparatorItem6,
             this.navBarItem8,
-            this.navBarItem9});
+            this.navBarItem9,
+            this.navBarItem10});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 323;
@@ -229,12 +231,15 @@
             this.navBarItem9.Caption = "Müşteriler";
             this.navBarItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem9.ImageOptions.SvgImage")));
             this.navBarItem9.Name = "navBarItem9";
+            this.navBarItem9.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem9_LinkClicked);
             // 
             // navBarGroup5
             // 
             this.navBarGroup5.Caption = "Ayarlar";
             this.navBarGroup5.Expanded = true;
             this.navBarGroup5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup5.ImageOptions.LargeImage")));
+            this.navBarGroup5.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem10)});
             this.navBarGroup5.Name = "navBarGroup5";
             // 
             // navBarItem6
@@ -288,6 +293,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // navBarItem10
+            // 
+            this.navBarItem10.Caption = "ayarlar";
+            this.navBarItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem10.ImageOptions.SvgImage")));
+            this.navBarItem10.Name = "navBarItem10";
+            this.navBarItem10.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem10_LinkClicked);
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -337,5 +349,6 @@
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraNavBar.NavBarItem navBarItem8;
         private DevExpress.XtraNavBar.NavBarItem navBarItem9;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem10;
     }
 }

@@ -63,5 +63,17 @@ namespace deneme
             form1.Show();
             this.Close();
         }
+
+        private void navBarItem9_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            musteriler musteri=new musteriler();
+            musteri.Show();
+        }
+
+        private void navBarItem10_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            ayarlar ayarlar = new ayarlar();
+            ayarlar.Show();
+        }
     }
 }

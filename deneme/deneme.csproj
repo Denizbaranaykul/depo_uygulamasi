@@ -124,6 +124,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar.Designer.cs">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,11 +168,11 @@
     <Compile Include="stok_rapor.Designer.cs">
       <DependentUpon>stok_rapor.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraForm1.cs">
+    <Compile Include="musteriler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XtraForm1.Designer.cs">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
+    <Compile Include="musteriler.Designer.cs">
+      <DependentUpon>musteriler.cs</DependentUpon>
     </Compile>
     <Compile Include="ürün_ekleme.cs">
       <SubType>Form</SubType>
@@ -186,6 +192,9 @@
     <Compile Include="ürün_silme.Designer.cs">
       <DependentUpon>ürün_silme.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ayarlar.resx">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customer.resx">
       <DependentUpon>customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +223,9 @@
     </Compile>
     <EmbeddedResource Include="stok_rapor.resx">
       <DependentUpon>stok_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriler.resx">
+      <DependentUpon>musteriler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ürün_ekleme.resx">
       <DependentUpon>ürün_ekleme.cs</DependentUpon>

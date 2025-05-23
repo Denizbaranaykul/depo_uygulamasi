@@ -48,6 +48,40 @@ namespace deneme
                     
                 }
             }
+            int Urun_id;
+            string sql = "SELECT id FROM urunler WHERE urun_adi = @urunAdi";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@urunAdi", urunAdi);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Urun_id = Convert.ToInt32(reader["id"]);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ürün bulunamadı.");
+                            return;
+                        }
+                    }
+                }
+            }
+            string query = "INSERT INTO orders(user_id,product_id,quantity) VALUES(@user,@product,@quan)";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@user", Form1.GLobalDatabase.dt.Rows[0]["id"]);
+                    cmd.Parameters.AddWithValue("@product",Urun_id);
+                    cmd.Parameters.AddWithValue("@quan", 1);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
         private void reduce(string urunAdi)
         {
@@ -144,7 +178,7 @@ namespace deneme
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-          ShowProductByName("Iphone 14");
+          ShowProductByName("iphone 14");
         }
 
 
@@ -230,7 +264,7 @@ namespace deneme
 
         private void simpleButton10_Click(object sender, EventArgs e)
         {
-            ShowProductByName("6 lı çorap");
+            ShowProductByName("çorap");
         }
 
         private void simpleButton17_Click(object sender, EventArgs e)
