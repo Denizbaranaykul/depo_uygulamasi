@@ -45,12 +45,12 @@ namespace deneme
                 Form1.GLobalDatabase.adapter = new MySqlDataAdapter(Form1.GLobalDatabase.cmd);
                 Form1.GLobalDatabase.dt = new DataTable();
                 Form1.GLobalDatabase.adapter.Fill(Form1.GLobalDatabase.dt);
-
+                
                 if (Form1.GLobalDatabase.dt.Rows.Count > 0)
                 {
-                    
                     main.Show();
                     this.Hide();
+                  
                 }
                 else
                 {

@@ -48,6 +48,7 @@
             this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem10 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem6 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem5 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
@@ -56,7 +57,6 @@
             this.label_qrkod = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.navBarItem10 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -140,6 +140,7 @@
             this.navBarItem1.Caption = "oturum açan kullanıcı";
             this.navBarItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.ImageOptions.LargeImage")));
             this.navBarItem1.Name = "navBarItem1";
+            this.navBarItem1.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem1_LinkClicked);
             // 
             // navBarSeparatorItem1
             // 
@@ -242,6 +243,13 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem10)});
             this.navBarGroup5.Name = "navBarGroup5";
             // 
+            // navBarItem10
+            // 
+            this.navBarItem10.Caption = "ayarlar";
+            this.navBarItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem10.ImageOptions.SvgImage")));
+            this.navBarItem10.Name = "navBarItem10";
+            this.navBarItem10.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem10_LinkClicked);
+            // 
             // navBarItem6
             // 
             this.navBarItem6.Caption = "Yeni Stok kartı";
@@ -292,13 +300,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(331, 317);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // navBarItem10
-            // 
-            this.navBarItem10.Caption = "ayarlar";
-            this.navBarItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("navBarItem10.ImageOptions.SvgImage")));
-            this.navBarItem10.Name = "navBarItem10";
-            this.navBarItem10.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem10_LinkClicked);
             // 
             // main_form
             // 

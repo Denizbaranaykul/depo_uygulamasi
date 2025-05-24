@@ -61,7 +61,7 @@ namespace deneme
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void navBarItem9_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
@@ -74,6 +74,12 @@ namespace deneme
         {
             ayarlar ayarlar = new ayarlar();
             ayarlar.Show();
+        }
+
+        private void navBarItem1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            profil p = new profil(Form1.GLobalDatabase.dt.Rows[0]["user_name"].ToString());
+            p.Show();
         }
     }
 }
